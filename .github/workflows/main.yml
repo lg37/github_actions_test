@@ -1,5 +1,8 @@
-on: [push]
-name: Azure ARM
+on:
+  push:
+    paths:
+      - '**.json'
+name: AzureARM_sa
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
