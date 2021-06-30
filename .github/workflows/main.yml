@@ -28,4 +28,4 @@ jobs:
         deploymentName: github-action-test
 
       # output storageAccountName from template
-    - run: echo Storage Account Created: ${{ steps.deploy.outputs.storageAccountName }}
+    - run: echo "Storage Account Created:" ${{ steps.deploy.outputs.storageAccountName }}
