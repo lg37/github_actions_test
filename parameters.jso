@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccountType": {
-      "value": "<first-value>"
+      "value": "standard_LRS"
     },
-    "<second-parameter-name>": {
-      "value": "<second-value>"
+    "location": {
+      "value": "westeurope"
     }
   }
 }
