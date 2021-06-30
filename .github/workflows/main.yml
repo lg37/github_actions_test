@@ -25,5 +25,5 @@ jobs:
         template: ./azuredeploy.json
         parameters: storageAccountType=Standard_LRS
 
-      # output containerName variable from template
-    - run: echo ${{ steps.deploy.outputs.containerName }}
+      # output storageAccountName from template
+    - run: echo ${{ steps.deploy.outputs.storageAccountName }}
