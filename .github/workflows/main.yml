@@ -26,5 +26,5 @@ jobs:
         parameters: ./parameters.json
         deploymentName: github-action-test
 
-      # output storageAccountName from template
-    - run: echo ${{ steps.deploy.outputs.storageAccountName }}
+      # output containerName from template
+    - run: echo ${{ steps.deploy.outputs.containerName }}
