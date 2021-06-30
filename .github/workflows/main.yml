@@ -18,6 +18,7 @@ jobs:
 
       # Deploy ARM template
     - name: Run ARM deploy
+      id: deploy
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
@@ -26,5 +27,5 @@ jobs:
         parameters: ./parameters.json
         deploymentName: github-action-test
 
-      # output containerName from template
-    - run: echo ${{ steps.deploy.outputs.containerName }}
+      # output storageAccountName from template
+    - run: echo ${{ steps.deploy.outputs.storageAccountName }}
