@@ -24,6 +24,7 @@ jobs:
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./azuredeploy.json
         parameters: ./parameters.json
+        deploymentName: github-action-test
 
       # output storageAccountName from template
     - run: echo ${{ steps.deploy.outputs.storageAccountName }}
